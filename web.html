@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One Choice - Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>🛍️ One Choice</h1>
+    <nav>
+      <a href="web.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="#" id="cart-toggle">Cart 🛒 <span id="cart-count">0</span></a>
+    </nav>
+  </header>
+
+  <section class="products">
+    <div class="product" style="--clr:#ff4d4d;">
+      <img src="img1.jpeg" alt="Shirt">
+      <h2>Men's Shirt</h2>
+      <p>₹499</p>
+      <button onclick="addToCart('Men\'s Shirt', 499)">Add to Cart</button>
+    </div>
+
+    <div class="product" style="--clr:#ffa500;">
+      <img src="img2.jpeg" alt="Dress">
+      <h2>Women's Dress</h2>
+      <p>₹799</p>
+      <button onclick="addToCart('Women\'s Dress', 799)">Add to Cart</button>
+    </div>
+
+    <div class="product" style="--clr:#32cd32;">
+      <img src="img3.jpeg" alt="Jeans">
+      <h2>Denim Jeans</h2>
+      <p>₹999</p>
+      <button onclick="addToCart('Denim Jeans', 999)">Add to Cart</button>
+    </div>
+
+    <div class="product" style="--clr:#ff69b4;">
+      <img src="img4.jpeg" alt="T-Shirt">
+      <h2>Casual T-Shirt</h2>
+      <p>₹299</p>
+      <button onclick="addToCart('Casual T-Shirt', 299)">Add to Cart</button>
+    </div>
+
+    <div class="product" style="--clr:#1e90ff;">
+      <img src="img5.jpeg" alt="Jacket">
+      <h2>Winter Jacket</h2>
+      <p>₹1299</p>
+      <button onclick="addToCart('Winter Jacket', 1299)">Add to Cart</button>
+    </div>
+  </section>
+
+  <!-- Cart Panel -->
+  <div id="cart-panel">
+    <h2>🛒 Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: ₹<span id="cart-total">0</span></p>
+    <button onclick="checkout()">Checkout</button>
+    <button id="close-cart">Close</button>
+  </div>
+
+  <footer>
+    <p>© 2025 One Choice Store</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
